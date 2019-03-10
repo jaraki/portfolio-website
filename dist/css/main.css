@@ -65,6 +65,9 @@
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #35ddff; }
+    .menu .nav-item:hover > a {
+      color: #35ddff;
+      transition: all 0.5s ease-out; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -120,7 +123,8 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(63, 223, 255, 0.5);
+    border: 3px #444 solid; }
 
 a {
   color: #fff;
@@ -136,14 +140,7 @@ header {
 
 main {
   padding: 4rem;
-  height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #35ddff;
-        transition: all 0.5s ease-out; }
+  min-height: calc(100vh - 60px); }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -180,10 +177,61 @@ main {
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #35ddff;
-      transition: all 0.5s ease-out; }
+  .projects .item {
+    position: relative;
+    text-align: center;
+    color: white; }
+    .projects .item-image {
+      opacity: 0.6;
+      /* Centered text */ }
+      .projects .item-image:hover {
+        opacity: 1; }
+      .projects .item-image:hover > img {
+        opacity: 1;
+        border-color: #35ddff;
+        transition: all 0.5s ease-out; }
+      .projects .item-image:hover > .title {
+        opacity: 0;
+        font-size: 0;
+        transform: translate(-50%, -300%);
+        color: #35ddff;
+        transition: all 0.5s ease-out; }
+      .projects .item-image:hover > .description {
+        opacity: 0;
+        transform: translate(-100%, -50%);
+        color: #35ddff;
+        transition: all 0.5s ease-out; }
+      .projects .item-image:hover > .timeline {
+        opacity: 0;
+        transform: translate(100%, -50%);
+        color: #35ddff;
+        transition: all 0.5s ease-out; }
+      .projects .item-image .title {
+        opacity: 1;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        font-size: 3vw;
+        transform: translate(-50%, -50%); }
+      .projects .item-image .description {
+        opacity: 1;
+        width: calc(100% - 6px);
+        background: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        font-size: 1em;
+        transform: translate(-50%, -50%); }
+      .projects .item-image .timeline {
+        opacity: 1;
+        width: calc(100% - 6px);
+        height: 20px;
+        background: rgba(68, 68, 68, 0.5);
+        position: absolute;
+        top: calc(100% - 110px);
+        left: 50%;
+        font-size: 1em;
+        transform: translate(-50%, -50%); }
 
 .boxes {
   display: flex;
@@ -223,10 +271,18 @@ main {
 
 #main-footer {
   text-align: center;
+  align-items: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
+  #main-footer .icons {
+    align-items: center; }
+    #main-footer .icons a {
+      padding: 0.5rem; }
+      #main-footer .icons a:hover {
+        color: #35ddff;
+        transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1171px) {
   .projects {

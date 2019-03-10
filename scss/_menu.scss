@@ -102,6 +102,11 @@
         &.current > a{
             color: $secondary-color;
         }
+
+        &:hover > a{
+            color: $secondary-color;
+            @include easeOut;
+        }
     }
 
     .nav-link {

@@ -26,7 +26,8 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        background: rgba(lighten($secondary-color, 2), 0.5);
+        border: 3px $primary-color solid;
     }
 }
 a {
@@ -46,20 +47,7 @@ header {
 
 main {
     padding: 4rem;
-    height: calc(100vh - 60px);
-
-    .icons {
-        margin-top: 1rem;
-
-        a {
-            padding: 0.4rem;
-
-            &:hover {
-                color: $secondary-color;
-                @include easeOut();
-            }
-        }
-    }
+    min-height: calc(100vh - 60px);
 
     &#home {
         overflow: hidden;
@@ -116,13 +104,80 @@ main {
     img {
         width:100%;
         border: 3px #fff solid;
-
-        &:hover {
-            opacity: 0.5;
-            border-color: $secondary-color;
-            @include easeOut;
-        }
     }
+    .item {
+        position: relative;
+        text-align: center;
+        color: white;
+
+        &-image {
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+
+            &:hover > img{
+                opacity: 1;
+                border-color: $secondary-color;
+                @include easeOut;
+            }             
+            &:hover > .title {
+                opacity: 0;
+                font-size: 0;
+                transform: translate(-50%, -300%);
+                color: $secondary-color;
+                @include easeOut;
+            }
+            &:hover > .description {
+                opacity: 0;
+                transform: translate(-100%, -50%);
+                color: $secondary-color;
+                @include easeOut;
+            }
+            &:hover > .timeline {
+                opacity: 0;
+                transform: translate(100%, -50%);
+                color: $secondary-color;
+                @include easeOut;
+            }
+
+            /* Centered text */
+            .title {
+                opacity: 1;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                font-size: 3vw;
+                transform: translate(-50%, -50%);
+            }
+
+            .description {
+                opacity: 1;
+                width: calc(100% - 6px);
+                background: rgba($primary-color, 0.5);
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                font-size: 1em;
+                transform: translate(-50%, -50%);
+            }
+
+            .timeline {
+                opacity: 1;
+                width: calc(100% - 6px);
+                height: 20px;
+                background: rgba($primary-color, 0.5);
+                position: absolute;
+                top: calc(100% - 110px);
+                left: 50%;
+                font-size: 1em;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+            
+    }
+
 }
 
 // Contact Page
@@ -177,9 +232,22 @@ main {
 
 #main-footer {
     text-align: center;
+    align-items: center;
     padding: 1rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
+
+    .icons {
+        align-items: center;
+        a {
+            padding: 0.5rem;
+
+            &:hover {
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
 }
 @import 'mobile';
