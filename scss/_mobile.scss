@@ -1,14 +1,19 @@
 // Widescreens
 @include mediaXl {
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .game-info{
+        grid-template-areas: 'video intro intro'
+        'game team lessons';
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 // Desktops & Laptops
 @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -53,7 +58,8 @@
         grid-template-columns: 1fr;
     }
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        //grid-template-columns: repeat(2, 1fr);
     }
 }
 

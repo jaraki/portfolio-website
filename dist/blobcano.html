@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Blobcano</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        My Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="blobcano">
+        <a href="work.html" class="back-to-work"> <i class="fas fa-chevron-left"></i> Back to My Portfolio</a>
+        <h1 class="lg-heading">
+            Blobcano
+        </h1>
+        <h2 class="sm-heading">
+            Cartoon Last-Man Standing Arena Brawler
+        </h2>
+        <div class="game-info">
+            <div class="video-wrapper">
+                <iframe class="video" src="https://www.youtube.com/embed/RF6X_so2o7k"></iframe>
+            </div>
+            <div class="intro">
+                <h3 id="text-secondary">
+                    You are a blob in a volcanic arena... The floor is lava and rocks fall from the sky.
+                    You grapple between rocks, avoiding death at the bottom and climbing to outmaneuver your opponents and gain the higher ground so that you can punch them into the lava!
+                    Do everything you can to be the last blob standing!
+                </h3>
+            </div>
+            <div class="the game">
+                <h1>The Game</h1>
+                <p class="item-text">
+                    Blobcano is a 2-4 player cartoon-style arena brawler made in Unity C# as my Senior Capstone Project at UC Irvine.
+                    Capstone was a two-quarter class in which we worked on small teams of four to seven people to develop a game fround ground-zero in twenty weeks with the help of industry mentors, from companies such as Blizzard, Amazon, etc.
+                    The team consisted of seven students, five of the others were in the capstone class with me, and Tori was an artist that we had had on previous projects that we asked to help us during our second quarter. Our mentors were Darryl Despie and Ben Deane, two senior-level programmers at Blizzard Entertainment.
+                </p>
+                <p class="item-text">
+                    The project was going well throughout the first quarter, often far surpassing the benchmarks that our professor had set for the teams, and at the beginning of the second quarter, we discovered an interesting feature in the game where you could connect to multiple other blobs to form chains and navigate together throughout the arena.
+                    With the Global Game Jam approaching, we decided to (with the exception of Brad, who decided to work on a different game with his friends) make a game based off of the mechanic we had found. And so, <a href="electrio.html" class="text-secondary">ElecTrio</a> was born.
+                    You can read more about it on its project page, but in short we ended up winning the iThrive prize for the Find The Kind diversifier as well as the best design for a total of $525 (split evenly between the team).
+                </p>
+                <p class="item-text">
+                    Our professor, who also runs the Global Game Jam site at UC Irvine, loved ElecTrio so much that he urged us to switch development in our Capstone class from Blobcano to ElecTrio. After some debate between our team, we decided to wrap up development on Blobcano and switch to ElecTrio for the remaining eight weeks of the quarter.
+                    However, Blobcano had reached a state that was pretty much feature complete and polished, so at our end of the year showcase, we were able to show both games.
+                </p>
+            </div>
+            <div class="the team">
+                <h1>The Team</h1>
+                <li class="team-item">
+                    <img src="img/projects/blobcano-team_orig.jpg" alt="Projects" class="team-image">
+                </li>
+                <li class="team-item">
+                    <b>Producer:</b> Luke Lohden
+                </li>
+                <li class="team-item">
+                    <b>Programmers:</b> Jeffrey Araki, Brad Guerrero, Quinn Levine
+                </li>
+                <li class="team-item">
+                    <b>Designers:</b> Jeffrey Araki, Quinn Levine, Luke Lohden 
+                </li>
+                <li class="team-item">
+                    <b>Audio & Music:</b> Adi Iyer
+                </li>    
+                <li class="team-item">
+                    <b>Artists:</b> Matt Nguyen, Tori Serrano
+                </li>
+            </div>
+            <div class="the lessons">
+                <h1>The Lessons</h1>
+                <p class="item-text">
+                    In terms of design, this project taught me a lot about scope and polish.
+                    We started with simple mechanics that we were able to flesh out quickly, and we actually spent a lot of the development time refining and improving our base concept rather than building new systems.
+                    This was substantially different from a lot of my other projects, as the ideas generally started out pretty complex and we had to figure out our mechanics design throughout the development cycle instead of at the beginning.
+                </p>
+                <p class="item-text">
+                    Programming-wise, I also learned a lot.
+                    It was my first time working with bumpmaps in Unity, which we used to give our 2D elements depth that would react with lighting. This was used throughout the game but also on the title screen, to give the title a more realistic look and feel.
+                </p>
+                <p class="item-text">
+                    It was also my first time designing my own data structure to solve a problem.
+                    I made what I called a UniqueLoop using a dictionary and a circular linked-list to solve the problem of players being able to select the same color in the Character Select Screen (think Super Smash Bros).
+                    The way it worked was simple. There was the loop (the circular-linked list) and the dictionary, which held the association between ids and a particular linked list node.
+                    The data structure had three callable functions: GetNextItem(id), GetPreviousItem(id), and ReturnItem(id).
+                    GetNextItem(id) would check out the next item in the loop that wasn't already checked out to the given id, GetPreviousItem(id) would give the previous item, and ReturnItem(id) would return the item checked out to the id back to the loop.
+                    While used to solve this particular issue, UniqueLoop was also used elsewhere in the game simply as a loopable structure, such as the Game Mode Selection Screen.
+                </p>
+                <p class="item-text">
+                    Additionally, I designed and implemented an efficient procedural rock spawning system that allowed for precise control over spawning rocks into different bins, and recycled GameObjects using a pool. 
+                    This was one of the main systems of the game, and it went through many different iterations until we finally arrived at this one.
+                    It allowed us to choose the distribution of rocks over the bins (and the number of bins, which was the screenspace divided evenly; we had seven bins), the spawn frequency of the different types of rocks (only breakable, lava, and normal at the end, but we had other rock types throughout development), and the spawnrate (which we lowered as the game went on).
+                    Additionally, all of the rocks were instantiated at the beginning of the game, and deactivated once they went offscreen or were destroyed instead of having a system that destroyed the GameObjects and reinstantiated new rocks.
+                    This was a way of avoiding expensive calls to create new GameObjects and only switching the features that mattered to us (the rock sprite, scale, and rotation).
+                </p>
+                <p class="item-text">
+                    One thing that I was particularly proud of was the user experience design decisions that I created and implemented in Blobcano.
+                    Most notably, the idea to allow the players to play around with the controls in the Character Select Screen after they locked in their color was a successful way of letting players learn our game without having to create a tutorial.
+                    Furthermore, I created a Practice game mode in which there were nine static rocks and the floor was touchable, so that players could also learn that way.
+                    These two modes of learning were quite successful, as players were able to quickly learn the basics of our game without having to read and play through a full tutorial.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <div class="icons">
+            <a href="https://twitter.com/jrok96">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/jeffrey.araki">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jeffrey-araki-138087101/">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/jaraki">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCI5ePa3KT1sRS1YL5uwZQkg">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://www.twitch.tv/jrok96">
+                <i class="fab fa-twitch fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -41,6 +41,14 @@ header {
     width: 100%;
 }
 
+.back-to-work {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    padding: 0.5rem;
+    background: rgba($secondary-color, 0.5)
+}
+
 .text-secondary {
     color: $secondary-color;
 }
@@ -89,6 +97,66 @@ main {
     }
     
     .job {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+.game-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 'video' 'intro' 'game' 'team' 'lessons';
+    grid-template-columns: 1fr;
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .video {
+        grid-area: video;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+    
+    .intro {
+        grid-area: intro;
+        font-size: 1.5rem;
+    }
+    
+    .game {
+        grid-area: game;
+    }
+    
+    .team {
+        grid-area: team;
+        &-item {
+            list-style: none;
+            padding: 1rem;
+            .team-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .item-text {
+        padding: 0.5rem 1rem;
+    }
+    
+    .lessons {
+        grid-area: lessons;
+    }
+    
+    .the {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
@@ -147,7 +215,7 @@ main {
                 position: absolute;
                 top: 40%;
                 left: 50%;
-                font-size: 3vw;
+                font-size: 3rem;
                 transform: translate(-50%, -50%);
             }
 

@@ -135,6 +135,13 @@ header {
   z-index: 2;
   width: 100%; }
 
+.back-to-work {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  padding: 0.5rem;
+  background: rgba(53, 221, 255, 0.5); }
+
 .text-secondary {
   color: #35ddff; }
 
@@ -166,6 +173,50 @@ main {
   .about-info .job3 {
     grid-area: job3; }
   .about-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #35ddff 5px solid; }
+
+.game-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'video' 'intro' 'game' 'team' 'lessons';
+  grid-template-columns: 1fr; }
+  .game-info .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+  .game-info .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .game-info .video {
+    grid-area: video;
+    margin: auto;
+    width: 100%;
+    height: auto; }
+  .game-info .intro {
+    grid-area: intro;
+    font-size: 1.5rem; }
+  .game-info .game {
+    grid-area: game; }
+  .game-info .team {
+    grid-area: team; }
+    .game-info .team-item {
+      list-style: none;
+      padding: 1rem; }
+      .game-info .team-item .team-image {
+        width: 100%;
+        height: auto; }
+  .game-info .item-text {
+    padding: 0.5rem 1rem; }
+  .game-info .lessons {
+    grid-area: lessons; }
+  .game-info .the {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #35ddff 5px solid; }
@@ -211,7 +262,7 @@ main {
         position: absolute;
         top: 40%;
         left: 50%;
-        font-size: 3vw;
+        font-size: 3rem;
         transform: translate(-50%, -50%); }
       .projects .item-image .description {
         opacity: 1;
@@ -286,11 +337,14 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .game-info {
+    grid-template-areas: 'video intro intro' 'game team lessons';
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -320,7 +374,7 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main {
