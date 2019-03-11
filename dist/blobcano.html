@@ -116,7 +116,7 @@
                     I made what I called a UniqueLoop using a dictionary and a circular linked-list to solve the problem of players being able to select the same color in the Character Select Screen (think Super Smash Bros).
                     The way it worked was simple. There was the loop (the circular-linked list) and the dictionary, which held the association between ids and a particular linked list node.
                     The data structure had three callable functions: GetNextItem(id), GetPreviousItem(id), and ReturnItem(id).
-                    GetNextItem(id) would check out the next item in the loop that wasn't already checked out to the given id, GetPreviousItem(id) would give the previous item, and ReturnItem(id) would return the item checked out to the id back to the loop.
+                    GetNextItem(id) would check out the next item in the loop that wasn't already checked out to the given id, GetPreviousItem(id) would give the previous item, and ReturnItem(id) would return the item checked out to the id back to the loop (by deleting the key from the dictionary; the loop was never actually altered).
                     While used to solve this particular issue, UniqueLoop was also used elsewhere in the game simply as a loopable structure, such as the Game Mode Selection Screen.
                 </p>
                 <p class="item-text">
@@ -131,6 +131,12 @@
                     Most notably, the idea to allow the players to play around with the controls in the Character Select Screen after they locked in their color was a successful way of letting players learn our game without having to create a tutorial.
                     Furthermore, I created a Practice game mode in which there were nine static rocks and the floor was touchable, so that players could also learn that way.
                     These two modes of learning were quite successful, as players were able to quickly learn the basics of our game without having to read and play through a full tutorial.
+                </p>
+                <p class="item-text">
+                    The last thing I wanted to touch on isn't in the video or the GIF, as it only ended up working on Windows for reasons still unknown.
+                    I researched and was able to implement blob-like physics using some tricks with SpringJoints and shaders.
+                    It definitely gave the characters more life and made them actually feel like blobs.
+                    However, this shader did not work on Mac (which was used for the video and GIF), so you will have to download the game (which is the Windows build) to see this.
                 </p>
             </div>
         </div>

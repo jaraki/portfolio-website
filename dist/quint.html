@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Quint</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        My Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="quint">
+        <a href="work.html" class="back-to-work"> <i class="fas fa-chevron-left"></i> Back to My Portfolio</a>
+        <h1 class="lg-heading">
+            Quint
+        </h1>
+        <h2 class="sm-heading">
+            2-Player Asynchronously Networked Mobile Board Game
+        </h2>
+        <div class="game-info">
+            <img src="img/projects/quint-icon.PNG" alt="Projects">
+            <div class="intro">
+                <h3 id="text-secondary">
+                    Quint is a board game like no other.
+                    Play head-to-head online against your friends in a battle of wits as you develop your tactics, thwart your opponent's plans, and try not to accidentally help them win (which can easily happen in this game)! 
+                </h3>
+            </div>
+            <div class="the game">
+                <h1>The Game</h1>
+                <p class="item-text">
+                    Quint is a 2-player asynchronously networked board game written in Unity C# that I made as an individual project to learn about Unity mobile development, database management, and modeling in Maya.
+                    The idea for the game is based off of a game that I created with one of my friends in high school. I originally coded the game in Java for Android Studio, but decided to port it to Unity (which was not very difficult given how similar Java and C# are) in order to make a nicer looking game.
+                </p>
+                <p class="item-text">
+                    The objective in Quint is to get five-in-a-row.
+                    Each turn, players place two pieces: one of their color (black or white), and one grey piece, which counts for both players.
+                    These two pieces cannot be in the same row, column, or diagonal.
+                    The piece of their color can be placed on an empty square, or also to replace a grey piece on the board, whereas the grey piece must be placed on an empty square.
+                    Black goes first, but white starts with a piece in the center of the 11x11 board.
+                    If the board is full and there are no five-in-a-rows, the game is a draw.
+                </p>
+                <p class="item-text">
+                    The game is quite simple to learn yet elegantly complex in practice.
+                    It quickly becomes difficult to both attack and defend at the same time without helping your opponent with your grey pieces.
+                    Generally, your color piece moves become your defensive moves, as you can't block with grey pieces, and your grey piece moves are generally used offensively to try to expand without helping your opponent too much.
+                    Some of the main ways to win include: getting an open-ended four-in-a-row of your color or getting two or more four-in-a-rows that don't intersect at a grey piece.
+                </p>
+                <p class="item-text">
+                    Currently, the game is released on the Google Play Store, with possible future releases to the iOS App Store.
+                </p>
+            </div>
+            <div class="the team">
+                <h1>The Team</h1>
+                <li class="team-item">
+                    <img src="img/portrait.jpg" alt="Projects" class="team-image">
+                </li>
+                <li class="team-item">
+                    <b>Programmers:</b> Jeffrey Araki
+                </li>
+                <li class="team-item">
+                    <b>Designers:</b> Jeffrey Araki
+                </li>
+                <li class="team-item">
+                    <b>Artists:</b> Jeffrey Araki
+                </li>
+            </div>
+            <div class="the lessons">
+                <h1>The Lessons</h1>
+                <p class="item-text">
+                    This project was specifically a learning project, so I definitely accomplished that goal. Building a game from scratch in a matter of weeks was definitely not easy.
+                </p>
+                <p class="item-text">
+                    For programming, the most valuable thing that I learned was database management.
+                    I was able to create my own database that managed the game states, message system, user system, etc., write php code to query that database, and hook up that php code with Unity using WWWs.
+                    I found a free website that still currently hosts my database as well as the php files that access it.
+                    This was a fairly complex task that took the bulk of the development time.
+                    The rest of the programming was pretty basic, all knowledge that I had acquired over my previous projects, such as programming user interfaces, gameplay logic, etc.
+                    It actually turned out that developing for mobile was a lot easier than I had anticipated, and not a lot changed from my normal development habits besides using a tablet with Unity Remote to test.
+                    I learned a few things about Unity In-App Purchasing and Advertisement, but using those APIs was incredibly simple.
+                </p>
+                <p class="item-text">
+                    This was the first project in which I created my own art, as all of my other projects had artists on them.
+                    After taking a model and worldbuilding class at UC Irvine, I learned how to use Maya, which I used to create all of the 3D assets in this game.
+                    My inspiration for the isometric 3D design came from games like Hearthstone (which also happens to be made in Unity).
+
+                </p>
+                <p class="item-text">
+                    Additionally, I learned how to stay disciplined on individual projects, and the true value of having a producer keeping you on track.
+                    At times it was difficult to keep working (some days I spent 8+ hours working on this project), but in the end I was glad that I was able to work as hard as I did on the project with only my self-motivation.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <div class="icons">
+            <a href="https://twitter.com/jrok96">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/jeffrey.araki">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jeffrey-araki-138087101/">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/jaraki">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCI5ePa3KT1sRS1YL5uwZQkg">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://www.twitch.tv/jrok96">
+                <i class="fab fa-twitch fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
