@@ -412,27 +412,27 @@ main {
       background: url(../img/portrait-small.jpg);
       width: 150px;
       height: 150px; }
-  #about {
-    font-size: 25px; }
-    #about .pimg1, #about .pimg2, #about .pimg3, #about .pimg4, #about .pimg5, #about .pimg6, #about .pimg7 {
-      background-attachment: scroll; }
-    #about .pimg1 {
-      min-height: 200px; }
-    #about .pimg2 {
-      min-height: 100px; }
-    #about .pimg3 {
-      min-height: 100px; }
-    #about .pimg4 {
-      min-height: 100px; }
-    #about .pimg5 {
-      min-height: 100px; }
-    #about .pimg6 {
-      min-height: 100px; }
-    #about .pimg7 {
-      min-height: 50px; }
-    #about .ptext {
-      font-size: 25px;
-      top: calc(50% - 25px); }
+  #about .pimg1, #about .pimg2, #about .pimg3, #about .pimg4, #about .pimg5, #about .pimg6, #about .pimg7 {
+    background-attachment: scroll; }
+  #about .pimg1 {
+    min-height: 200px; }
+  #about .pimg2 {
+    min-height: 100px; }
+  #about .pimg3 {
+    min-height: 100px; }
+  #about .pimg4 {
+    min-height: 100px; }
+  #about .pimg5 {
+    min-height: 100px; }
+  #about .pimg6 {
+    min-height: 100px; }
+  #about .pimg7 {
+    min-height: 50px; }
+  #about .ptext {
+    font-size: 25px;
+    top: calc(50% - 25px); }
+  #about .section .about-text {
+    font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }
 
