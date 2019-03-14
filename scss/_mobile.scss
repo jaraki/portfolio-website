@@ -47,7 +47,7 @@
         transform: translate3d(100%, 0, 0);
         
         .portrait {
-            background: url(../img/portrait_small.jpg);
+            background: url(../img/portrait-small.jpg);
             width: 150px;
             height: 150px;
         }
@@ -59,7 +59,6 @@
     }
     .projects {
         grid-template-columns: 1fr;
-        //grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -74,6 +73,16 @@
         .lg-heading {
           margin-top: 1rem;
           font-size: 5rem;
+        }
+    }
+    #main-footer {
+        height: 100px;
+        .icons {
+            text-align: left;
+        }
+        .copyright {
+            position: relative;
+            padding-bottom: 1rem;
         }
     }
 

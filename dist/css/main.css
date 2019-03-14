@@ -153,29 +153,50 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #35ddff 3px solid; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job1 {
-    grid-area: job1; }
-  .about-info .job2 {
-    grid-area: job2; }
-  .about-info .job3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #35ddff 5px solid; }
+#about {
+  height: 100%; }
+  #about .pimg1, #about .pimg2, #about .pimg3, #about .pimg4, #about .pimg5, #about .pimg6, #about .pimg7 {
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  #about .pimg1 {
+    min-height: 1000px;
+    background-image: url(../img/about/earth.jpg); }
+  #about .pimg2 {
+    min-height: 500px;
+    background-image: url(../img/about/volleyball.jpg); }
+  #about .pimg3 {
+    min-height: 500px;
+    background-image: url(../img/about/warcraft.jpg); }
+  #about .pimg4 {
+    min-height: 500px;
+    background-image: url(../img/about/chess.jpg); }
+  #about .pimg5 {
+    min-height: 500px;
+    background-image: url(../img/about/cards.jpg); }
+  #about .pimg6 {
+    min-height: 500px;
+    background-image: url(../img/about/learn.jpg); }
+  #about .pimg7 {
+    min-height: 250px;
+    background-image: url(../img/about/contact.jpg); }
+  #about .section {
+    text-align: center;
+    padding: 50px 80px;
+    font-size: 1rem; }
+  #about .ptext {
+    position: absolute;
+    top: calc(50% - 50px);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 .game-info {
   display: grid;
@@ -234,7 +255,8 @@ main {
   .projects .item {
     position: relative;
     text-align: center;
-    color: white; }
+    color: white;
+    overflow: hidden; }
     .projects .item-image {
       opacity: 0.6;
       /* Centered text */ }
@@ -323,20 +345,30 @@ main {
   background: #c4c4c4;
   color: #333; }
 
+.btn-unint {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  background: #373737;
+  color: #fff; }
+
 #main-footer {
-  text-align: center;
-  align-items: center;
+  text-align: left;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
   #main-footer .icons {
-    align-items: center; }
+    text-align: right; }
     #main-footer .icons a {
       padding: 0.5rem; }
       #main-footer .icons a:hover {
         color: #35ddff;
         transition: all 0.5s ease-out; }
+  #main-footer .copyright {
+    position: absolute;
+    font-size: 1rem; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -370,7 +402,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/portrait_small.jpg);
+      background: url(../img/portrait-small.jpg);
       width: 150px;
       height: 150px; }
   .about-info {
@@ -387,5 +419,12 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  #main-footer {
+    height: 100px; }
+    #main-footer .icons {
+      text-align: left; }
+    #main-footer .copyright {
+      position: relative;
+      padding-bottom: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }

@@ -65,41 +65,63 @@ main {
     }
 }
 
-.about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
-
-    .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
+#about {
+    height: 100%;
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7 {
+        position: relative;
+        opacity: 0.7;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
-    
-    .bio {
-        grid-area: bio;
-        font-size: 1.5rem;
+    .pimg1 {
+        min-height: 1000px;
+        background-image: url(../img/about/earth.jpg);
     }
-    
-    .job1 {
-        grid-area: job1;
+    .pimg2 {
+        min-height: 500px;
+        background-image: url(../img/about/volleyball.jpg);
     }
-    
-    .job2 {
-        grid-area: job2;
+    .pimg3 {
+        min-height: 500px;
+        background-image: url(../img/about/warcraft.jpg);
     }
-    
-    .job3 {
-        grid-area: job3;
+    .pimg4 {
+        min-height: 500px;
+        background-image: url(../img/about/chess.jpg);
     }
-    
-    .job {
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+    .pimg5 {
+        min-height: 500px;
+        background-image: url(../img/about/cards.jpg);
+    }
+    .pimg6 {
+        min-height: 500px;
+        background-image: url(../img/about/learn.jpg);
+    }
+    .pimg7 {
+        min-height: 250px;
+        background-image: url(../img/about/contact.jpg);
+    }
+    .section {
+        text-align: center;
+        padding: 50px 80px;
+        font-size: 1rem;
+    }
+    .ptext {
+        position: absolute;
+        top: calc(50% - 50px);
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
     }
 }
 .game-info {
@@ -181,6 +203,7 @@ main {
         position: relative;
         text-align: center;
         color: white;
+        overflow: hidden;
 
         &-image {
             opacity: 0.6;
@@ -301,17 +324,24 @@ main {
     background: lighten($primary-color, 50);
     color: #333;
 }
+.btn-unint {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    background: darken($primary-color, 5);
+    color: #fff;
+}
 
 #main-footer {
-    text-align: center;
-    align-items: center;
+    text-align: left;
     padding: 1rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
 
     .icons {
-        align-items: center;
+        text-align: right;
         a {
             padding: 0.5rem;
 
@@ -320,6 +350,10 @@ main {
                 @include easeOut();
             }
         }
+    }
+    .copyright {
+        position: absolute;
+        font-size: 1rem;
     }
 }
 @import 'mobile';
