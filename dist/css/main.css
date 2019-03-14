@@ -153,50 +153,57 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-#about {
-  height: 100%; }
-  #about .pimg1, #about .pimg2, #about .pimg3, #about .pimg4, #about .pimg5, #about .pimg6, #about .pimg7 {
-    position: relative;
-    opacity: 0.7;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
-  #about .pimg1 {
-    min-height: 1000px;
-    background-image: url(../img/about/earth.jpg); }
-  #about .pimg2 {
-    min-height: 500px;
-    background-image: url(../img/about/volleyball.jpg); }
-  #about .pimg3 {
-    min-height: 500px;
-    background-image: url(../img/about/warcraft.jpg); }
-  #about .pimg4 {
-    min-height: 500px;
-    background-image: url(../img/about/chess.jpg); }
-  #about .pimg5 {
-    min-height: 500px;
-    background-image: url(../img/about/cards.jpg); }
-  #about .pimg6 {
-    min-height: 500px;
-    background-image: url(../img/about/learn.jpg); }
-  #about .pimg7 {
-    min-height: 250px;
-    background-image: url(../img/about/contact.jpg); }
-  #about .section {
-    text-align: center;
-    padding: 50px 80px;
-    font-size: 1rem; }
-  #about .ptext {
-    position: absolute;
-    top: calc(50% - 50px);
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+#about .pimg1, #about .pimg2, #about .pimg3, #about .pimg4, #about .pimg5, #about .pimg6, #about .pimg7 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#about .pimg1 {
+  min-height: 1000px;
+  background-image: url(../img/about/earth.jpg); }
+
+#about .pimg2 {
+  min-height: 500px;
+  background-image: url(../img/about/volleyball.jpg); }
+
+#about .pimg3 {
+  min-height: 500px;
+  background-image: url(../img/about/warcraft.jpg); }
+
+#about .pimg4 {
+  min-height: 500px;
+  background-image: url(../img/about/chess.jpg); }
+
+#about .pimg5 {
+  min-height: 500px;
+  background-image: url(../img/about/cards.jpg); }
+
+#about .pimg6 {
+  min-height: 500px;
+  background-image: url(../img/about/learn.jpg); }
+
+#about .pimg7 {
+  min-height: 250px;
+  background-image: url(../img/about/contact.jpg); }
+
+#about .section {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.5rem; }
+
+#about .ptext {
+  position: absolute;
+  top: calc(50% - 50px);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 .game-info {
   display: grid;
@@ -405,9 +412,27 @@ main {
       background: url(../img/portrait-small.jpg);
       width: 150px;
       height: 150px; }
-  .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
+  #about {
+    font-size: 25px; }
+    #about .pimg1, #about .pimg2, #about .pimg3, #about .pimg4, #about .pimg5, #about .pimg6, #about .pimg7 {
+      background-attachment: scroll; }
+    #about .pimg1 {
+      min-height: 200px; }
+    #about .pimg2 {
+      min-height: 100px; }
+    #about .pimg3 {
+      min-height: 100px; }
+    #about .pimg4 {
+      min-height: 100px; }
+    #about .pimg5 {
+      min-height: 100px; }
+    #about .pimg6 {
+      min-height: 100px; }
+    #about .pimg7 {
+      min-height: 50px; }
+    #about .ptext {
+      font-size: 25px;
+      top: calc(50% - 25px); }
   .projects {
     grid-template-columns: 1fr; } }
 

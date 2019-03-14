@@ -52,10 +52,36 @@
             height: 150px;
         }
     }
-
-    .about-info{
-        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-        grid-template-columns: 1fr;
+    #about {
+        font-size: 25px;
+        .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7 {
+            background-attachment: scroll;
+        }
+        .pimg1 {
+            min-height: 200px;
+        }
+        .pimg2 {
+            min-height: 100px;
+        }
+        .pimg3 {
+            min-height: 100px;
+        }
+        .pimg4 {
+            min-height: 100px;
+        }
+        .pimg5 {
+            min-height: 100px;
+        }
+        .pimg6 {
+            min-height: 100px;
+        }
+        .pimg7 {
+            min-height: 50px;
+        }
+        .ptext {
+            font-size: 25px;
+            top: calc(50% - 25px);
+        }
     }
     .projects {
         grid-template-columns: 1fr;
