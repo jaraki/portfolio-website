@@ -432,7 +432,7 @@ main {
     font-size: 25px;
     top: calc(50% - 12.5px); }
   #about .section .about-text {
-    font-size: 1rem; }
+    font-size: 0.9rem; }
   .projects {
     grid-template-columns: 1fr; } }
 
