@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Pirate's Bounty</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        My Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Resume.pdf" class="nav-link">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="piratesbounty">
+        <a href="work.html" class="back-to-work"> <i class="fas fa-chevron-left"></i> Back to My Portfolio</a>
+        <h1 class="lg-heading">
+            Pirate's <span class="text-secondary">Bounty</span>
+        </h1>
+        <h2 class="sm-heading">
+            Networked Multiplayer Pirate Battle Royale
+        </h2>
+        <div class="game-info">
+            <div class="video-wrapper">
+                <iframe class="video" src="https://www.youtube.com/embed/0w34R_gQeE8"></iframe>
+            </div>
+            <div class="intro">
+                <h3 id="text-secondary">
+                    You helm a small pirate ship locked in fierce naval combat with other players in a small arena.
+                    You must prove yourself the greatest pirate by collecting booty to upgrade your ship and blasting your cannons to sink your enemies.
+                </h3>
+            </div>
+            <div class="the game">
+                <h1>The Game</h1>
+                <p class="item-text">
+                    Pirate's Bounty is a 2-4 player networked multiplayer pirate battle royale made in Unity C# for my junior year Video Game Development Club project.
+                    It was the first time that any of us had worked with full-fledged synchronous networking, and it was a memorable experience simply because of that.
+                </p>
+                <p class="item-text">
+                    The objective of the game was to capture enough spawn points to become the pirate king: upgrading your ship was only a way to help you achieve this task.
+                </p>
+                <p class="item-text">
+                    The world, as well as the spawn points, were all procedurally generated, and maps could be custom built using a certain set of attributes such as land frequency, resource frequency, and map size.
+                    This allowed each game to be fresh, as you could always make a different map if you got bored of one stage.
+                </p>
+            </div>
+            <div class="the team">
+                <h1>The Team</h1>
+                <li class="team-item">
+                    <b>Producer:</b> Luke Lohden
+                </li>
+                <li class="team-item">
+                    <b>Programmers:</b> Jeffrey Araki, Quinn Levine, Matt Ruiz, Tony Phan
+                </li>
+                <li class="team-item">
+                    <b>Designers:</b> Jeffrey Araki, Quinn Levine, Luke Lohden 
+                </li>
+                <li class="team-item">
+                    <b>Audio & Music:</b> Luke Falcone, Billy Ismanto
+                </li>    
+                <li class="team-item">
+                    <b>Artists:</b> Luke Lohden, Tori Serrano, Shirby Wang
+                </li>
+            </div>
+            <div class="the lessons">
+                <h1>The Lessons</h1>
+                <p class="item-text">
+                    I learned a lot about Unity Networking, as well as networking in general, as this project was before I had taken any classes in networking.
+                    That being said, this project helped me out a lot in those classes, as I had already dealt with a lot of the problems in those classes by doing this project.
+                </p>
+                <p class="item-text">
+                    I also learned how networking can take a relatively simple project and turn it into a debugging nightmare.
+                    It seemed that everytime we made the slightest of changes in our code, there would be an unbelievable amount of bugs that we would have to address.
+                    However, I still think that we ended up with a solid final product despite all the trouble that we faced throughout the year.
+                </p>
+                <p class="item-text">
+                    This was also my first time programming UI networked elements. There were a lot of issues with syncing certain elements over the network, while keeping some of the other ones local.
+                    It was a valuable experience to learn what objects needed to be networked and which ones should stay local in order for it to work properly.
+                </p>
+                <p class="item-text">
+                    I also learned quite a bit about procedural generation and noise.
+                    My friend John (who I have done quite a few projects with) helped Quinn and I develop the procedural map generation system.
+                    We also ended up using a beta version of Unity so that we had access to the new TileMap features, which ended up being a bit buggy by the time our project was finished.
+                    Still, it was valuable to learn how to use the TileMap feature, as it now works nicely in the newest versions of Unity.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <div class="icons">
+            <a href="https://twitter.com/jrok96">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/jeffrey.araki">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jeffrey-araki-138087101/">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/jaraki">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCI5ePa3KT1sRS1YL5uwZQkg">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://www.twitch.tv/jrok96">
+                <i class="fab fa-twitch fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
